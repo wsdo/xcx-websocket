@@ -1,0 +1,44 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.voice{
+  padding-top: 50rpx;
+}
+
+.button-voice-play,
+.button-bpPage{
+  margin-top: 20rpx;
+}
+
+.button-hover{
+  background-color: 999;
+}
+
+.swiper {
+ height: 400rpx;
+ width: 100%;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+/*轮播图*/
+swiper,.slide-image{width: 750rpx;height: 375rpx;}
+page .wx-swiper-dots.wx-swiper-dots-horizontal{bottom:0; padding:0 2rpx;}
+page .wx-swiper-dot{ height: 14rpx;}
+page .wx-swiper-dot.wx-swiper-dot-active{width: 36rpx;border-radius: 60rpx;}

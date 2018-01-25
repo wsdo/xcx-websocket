@@ -1,0 +1,12 @@
+.container {
+  padding: 0;
+}
+.welcome-info {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}

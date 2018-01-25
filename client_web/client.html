@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" href="client.css">
+  <title>WebSocket Demo</title>
+  <!-- <link type="text/css" href="./client.css" rel="stylesheet" /> -->
+  <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="sm.css">
+  <link rel="stylesheet" href="sm-extend.css">
+  <link rel="stylesheet" href="demos.css"> -->
+  <style>
+
+  </style>
+  <body>
+    <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+    <div class="page-group">
+      <!-- 单个page ,第一个.page默认被展示-->
+      <div class="page">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+          <a class="icon icon-me pull-left open-panel"></a>
+          <h1 class="title">实时操作</h1>
+        </header>
+        <div class="pageContainer">
+          <div class="topArea" id="topArea">
+          </div>
+          <div class="content" id="">
+
+
+            <div class="swiper-container" data-space-between="10">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="bottomArea">
+              <div class="inputArea">
+                <input type="text" placeholder="连接服务器中..." class="message" id="inputMessage" />
+              </div>
+              <button class="sendButton" id="btn">切换</button>
+              <button class="sendButton" id="sendButton">发送</button>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab">
+          <a class="tab-item external active" href="#">
+                   <span class="icon icon-home"></span>
+                   <span class="tab-label">首页</span>
+               </a>
+          <a class="tab-item external" href="#">
+                   <span class="icon icon-star"></span>
+                   <span class="tab-label">收藏</span>
+               </a>
+          <a class="tab-item external" href="#">
+                   <span class="icon icon-settings"></span>
+                   <span class="tab-label">设置</span>
+               </a>
+        </nav>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="./zepto.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/4.1.0/js/swiper.min.js"></script>
+  </body>
+  <script type="text/javascript" src="client.js"></script>
+  <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script> -->
+  <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+
+  </html>

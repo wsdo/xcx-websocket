@@ -1,0 +1,23 @@
+
+<!--index.wxml-->
+<view class="container">
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" circular="{{loop}}" bindchange="schange" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="voice">
+    <button type="primary" size="default" hover-class="button-hover" class="button-voice-play" bindtap="socketBtnTap">{{socktBtnTitle}}</button>
+    <button type="primary" size="default" hover-class="button-hover" class="button-voice-play" bindtap="sendMessageBtnTap">发送</button>
+  </view>
+</view>
