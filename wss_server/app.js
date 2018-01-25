@@ -19,10 +19,9 @@ wss.on('connection', function connection(socket) {
             newclient.name = msg;
             wss.clients.forEach(function each(client) {
                 if (client.readyState === WebSocket.OPEN) {
-                    client.send("welcome_系统管理员_" + currentTime + "_欢迎" + msg + "加入聊天！");
+                    client.send(msg);
                 }
             });
-            console.log(newclient.name + "加入聊天。");
         }
         else{
             wss.clients.forEach(function each(client) {
@@ -32,20 +31,12 @@ wss.on('connection', function connection(socket) {
                 else if(client == socket){
                     client.send(msg);
                 }
-                console.log(newclient.name + "于" + currentTime + "说：" + msg);
             });
         }
     });
 
     socket.on('close', function close() {
       console.log('小程序断开wss');
-        // var currentTime = getTime();
-        // wss.clients.forEach(function each(client) {
-        //     if (client.readyState === WebSocket.OPEN) {
-        //         client.send("leave_系统管理员_" + currentTime + "_" + newclient.name + "离开聊天！");
-        //     }
-        //     console.log(newclient.name + "离开聊天。");
-        // });
     });
 });
 

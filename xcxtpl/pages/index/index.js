@@ -106,7 +106,7 @@ Page({
     }
   },
   sendMessageBtnTap: function () {
-    this.sendSocketMessage('小程序来了')
+    this.sendSocketMessage('welcome stark')
   },
   onLoad: function () {
     console.log('onLoad')
